@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     <title>MI PRIMERA APP DE AUTENTICACIÓN </title>
+     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="miEstilo.css">
+    </head>
+    <body>
+        <h1>Inicia sesión para comprar tus entradas</h1>
+        <div id="contenedor">
+            <div id="foto"></div>
+          <button id="logueo"> Con tu correo electrónico</button>
+          <div id="principal"> </div>
+          
+          <button id="guardar"> Recordarme </button>
+        </div>
+ <script //Llama a Jquery desde un enlace en la nube
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>       
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> <!--vinculación con la plataforma-->
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLz73asLIx17VDpW1ykqNhzlLimvCrdXA",
+    authDomain: "app-de-autenticacion.firebaseapp.com",
+    databaseURL: "https://app-de-autenticacion.firebaseio.com",
+    projectId: "app-de-autenticacion",
+    storageBucket: "app-de-autenticacion.appspot.com",
+    messagingSenderId: "642334726017"
+  };
+  firebase.initializeApp(config);
+</script>
+ <script src="funcionalidadApp2.js"></script>
+    </body>
+</html>  
